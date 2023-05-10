@@ -1,0 +1,7 @@
+Commands:
+
+```
+$ phpize
+$ configure
+$ make
+```

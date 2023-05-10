@@ -1,0 +1,7 @@
+ARG_ENABLE('includemonitor', 'includemonitor support', 'no');
+
+if (PHP_INCLUDEMONITOR != 'no') {
+	AC_DEFINE('HAVE_INCLUDEMONITOR', 1, 'includemonitor support enabled');
+
+	EXTENSION('includemonitor', 'includemonitor.c', null, '/DZEND_ENABLE_STATIC_TSRMLS_CACHE=1');
+}
